@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://106.13.169.51:3306/db_psychotherapy?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: hqb123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+server:
+  port: 7788
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tb_
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
